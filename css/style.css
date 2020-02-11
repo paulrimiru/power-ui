@@ -4,6 +4,12 @@
 
 html {
   font-size: 10px;
+  overflow-x: hidden;
+}
+
+.headline {
+  background-image: url("../assets/headline2.png");
+  background-size: cover;
 }
 
 .header {
@@ -38,7 +44,7 @@ html {
   font-size: 1.8rem;
 }
 
-.header-container__link{
+.header-container__link {
   border-bottom: 1px solid transparent;
   padding-bottom: 2px;
   padding-right: 3.1rem;
@@ -49,11 +55,82 @@ html {
 }
 
 .header-container__link-colored a {
+  font-weight: 100;
+  font-size: 1.8rem;
   text-decoration: none;
   color: #fff;
   background-color: #F92524;
   padding: 11px 13px;
   border-radius: 5px;
+}
+
+.container {
+  display: grid;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container-image {
+  margin-right: -120px;
+  height: 97rem;
+  justify-self: flex-end;
+}
+
+.container-headliner {
+  padding-left: 200px;
+}
+
+.container-headliner__title {
+  font-size: 4.5rem;  
+  font-weight: 300;
+  margin: 0rem;
+}
+
+.container-headliner__title span {
+  font-size: 6.5rem;
+  font-weight: 900;
+}
+
+.container-headliner__divider {
+  width: 85px;
+  height: 5px;
+  background-color: #F92524;
+  margin-top: 12px;
+}
+
+.container-headliner__description {
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
+.container-headliner__join {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F92524;
+  color: #fff;
+  width: 205px;
+  padding: 12px 12px 12px 40px;
+  border-radius: 8px;
+  margin-top: 36px;
+  outline: none;
+}
+
+.container-headliner__join:hover {
+  cursor: pointer;
+}
+.container-headliner__join span {
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+.container-headliner__join image {
+  height: 18px;
+  background-color: #E91B1A;
 }
 
 @media screen and (max-width: 900px){
